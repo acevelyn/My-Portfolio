@@ -1,0 +1,332 @@
+/* COLOR CODES using SASS SCSS Variables
+Text Color $Dark Gray: #2b2b2b;
+Background Color $BeigeWhite: #F5F5F5;
+Primary Color $MidnightBlue: #000;
+Secondary Color $MidnightBlue: #191970;
+DarkGray: #2b2b2b;
+*/
+:root {
+  --bg-primary-color: #f5f5f5;
+  --primary-color: #000;
+  --secondary-color: #191970;
+  --dark-grey: #2b2b2b;
+  --white-text: #fff;
+  --animation-fill-1: #edc655;
+  --animation-fill-2: #fcffad;
+  --animation-fill-3: #f76414;
+  --primary-font-weight: 700;
+  --light-gray: lightgray;
+}
+
+/* --------GENERAL ---------------------------------------------- */
+* {
+  box-sizing: border-box; /* able to set the width value for every element
+  on the page to include padding and border values, can avoid any complex
+  precalculation  */
+}
+
+body {
+  color: var(--dark-grey);
+  background-color: var(--bg-primary-color);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+h1 {
+  font-family: georgia;
+  font-size: 30px;
+  font-weight: var(--primary-font-weight);
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: var(--primary-font-weight);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--primary-font-weight);
+}
+
+/* --------BUTTONS AND LINKS --------------------------------------- */
+
+a {
+  color: var(--secondary-color);
+}
+
+a:hover,
+a:focus { /* a focus is used for when it's selected by keyboard */
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--dark-grey);
+}
+
+button,
+.button {
+  border: none;
+  font-family: inherit; /* button has a default font, need to specify
+  what font you want to use/ inherited the body font */
+  background-color: var(--secondary-color);
+  color: var(--white-text);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px; /* rounds the square edges of the button */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  /* the "a" in rgba is the transparency, 1 indicates complete opacity */
+  transition: opacity 0.2s;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a pointed hand when hovering over the button */
+  cursor: pointer;
+  opacity: 0.8; /* reduces the opacity of the button to 80% */
+}
+
+/* -- LOGO, NAV & FOOTER ---------------------------------------- */
+.page-header {
+  display: flex; /* making the page header a flexbox container */
+  width: 100%; /* cover the full width of your page */
+  padding: 20px; /* adding space inside the logo and nav elements */
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.page-header__item { /* Logo and Navigation */
+  /* giving the both child items similar base behavior) */
+  flex: 0 1 200px; /* giving the nav a base width of 200px but also the
+  ability to shrink along the same ratio (not able to grow) */
+}
+
+.page-header__item:last-child { /* Navigation */
+  flex-grow: 1; /* giving the last child item (nav) the ability to grow and
+  take up the rest of the space when needed */
+  text-align: right; /* moving the last child (nav) to right of page */
+}
+
+.navigation-list { /* targeting the ul tag (ul {}) */
+  list-style-type: none; /* removing the bulletins in the ul list */
+}
+
+.navigation-list li { /* targeting the li in the ul list (nav li {}) */
+  display: inline-block; /* moving the li links side by side (in a row) */
+  margin-left: 15px; /* moving each li to the left in 15px to create
+  space between them */
+}
+
+.navigation-list__item--active {
+  text-decoration: none; /* the active link will not be underlined */
+}
+
+.page-footer {
+  clear: both; /* created a div for footer so it can be moved down in it's own
+  line (underneed profile portrait) */
+  display: flex; /* code to allow us to start using flexbox for the page
+  footer */
+  flex-direction: column; /* changes the elements to go from top to bottom,
+  instead of side by side */
+  text-align: center; /* moves the inline/inline block elements
+  to the center of pg */
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+/* -- HOME PAGE ---------------------------------------- */
+
+.profile {
+  max-width: 700px; /* will keep the profile box from exceedng 700px */
+  margin: 0 auto; /* will center the profile box */
+  padding-top: 25px;
+}
+
+.profile h1 {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.profile h2 {
+  margin-top: 0;
+}
+
+.profile__portrait {
+  float: left; /* moved the image to float left near the text instead of on top */
+  width: 250px; /* adjusted the size of the image */
+  margin-right: 40px; /* created space between welcome text and img */
+  border-radius: 50%; /* created a round image */
+}
+
+/* -- ABOUT PAGE -------------------------------------------- */
+
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about li {
+  text-align: center;
+}
+
+.skills {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.skills th {
+  font-family: arial;
+  font-weight: var(--primary-font-weight);
+}
+
+.berlin-illustration {
+  padding: 15px;
+}
+
+@keyframes color-change {
+  0% {
+    fill: var(--animation-fill-1);
+  }
+
+  50% {
+    fill: var(--animation-fill-2);
+  }
+
+  100% {
+    fill: var(--animation-fill-3);
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* -- WORK PAGE -------------------------------------------- */
+.grid__item {
+  display: inline-block;
+
+  /* keeping the grid items within the page flow but can add weight, padding, etc */
+  width: 33%;
+}
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* creating 3 columns */
+    grid-gap: 20px; /* space between the grid boxes set to 20px */
+    margin: 0;
+  }
+
+  .grid__item {
+    background-color: var(--light-gray);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+  }
+}
+
+/* --- CONTACT PAGE ------------------------------------------------ */
+.contact-page h1 {
+  text-align: center;
+}
+
+.contact-page {
+  width: 500px;
+  margin: auto;
+
+  /* border: 1px solid black; */
+}
+
+.contact-info {
+  float: left;
+
+  /* border: 1px solid black; */
+}
+
+.contact-page__form {
+  float: right;
+
+  /* border: 1px solid black; */
+}
+
+.contact-form__item {
+  text-align: right;
+
+  /* border: 1px solid black; */
+}
+
+/* -- Responsive CSS Rules ------------------------------------- */
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
