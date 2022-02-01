@@ -28,7 +28,7 @@ DarkGray: #2b2b2b;
 body {
   color: var(--dark-grey);
   background-color: var(--bg-primary-color);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
