@@ -28,7 +28,7 @@ DarkGray: #2b2b2b;
 body {
   color: var(--dark-grey);
   background-color: var(--bg-primary-color);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -135,10 +135,6 @@ button:focus,
   instead of side by side */
   text-align: center; /* moves the inline/inline block elements
   to the center of pg */
-}
-
-.page-footer a {
-  text-decoration: none;
 }
 
 
