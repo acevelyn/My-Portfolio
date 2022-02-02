@@ -160,7 +160,8 @@ button:hover,  button:focus,
 }
 .profile__portrait {
   float: left; /* moved the image to float left near the text instead of on top */
-  width: 250px; /* adjusted the size of the image */
+  width: 230px; /* adjusted the size of the image */
+  height: 300px;
   margin-right: 40px; /* created space between welcome text and img */
   border-radius: 50%; /* created a round image */
 }
