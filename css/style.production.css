@@ -166,6 +166,10 @@ button:hover,  button:focus,
   border-radius: 50%; /* created a round image */
 }
 
+.icons a {
+  text-decoration: none;
+}
+
 /* -- ABOUT PAGE -------------------------------------------- */
 
 .about {
@@ -273,6 +277,15 @@ button:hover,  button:focus,
 }
 
 /* -- WORK PAGE -------------------------------------------- */
+.work-title {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 20px;
+}
+
 .grid__item {
   display: inline-block;
   /* keeping the grid items within the page flow but can add weight, padding, etc*/
