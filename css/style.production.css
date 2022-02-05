@@ -23,12 +23,19 @@ body {
   margin: 10px;
 }
 
+main {
+  background-color: #89a9b0;
+  border: 1px solid gray;
+  margin-top: 20px;
+}
+
 h1 {
   font-family: georgia;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
 }
+
 h2{
   font-size: 20px;
   font-weight: 700;
@@ -89,6 +96,11 @@ button:hover,  button:focus,
 }
 
 /* -- LOGO, NAV & FOOTER ---------------------------------------- */
+
+.page-header img {
+  width:230px;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,8 +112,8 @@ button:hover,  button:focus,
 .page-header__item { /* Logo and Navigation */
   /* giving the both child items similar base behavior) */
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px; /* giving the nav a base width of 200px but also the
+      -ms-flex: 0 1 100px;
+          flex: 0 1 100px; /* giving the nav a base width of 200px but also the
   ability to shrink along the same ratio (not able to grow)*/
 }
 .page-header__item:last-child { /* Navigation */
@@ -135,7 +147,7 @@ button:hover,  button:focus,
   border-radius: 10px;
 }
 .navigation-list__item--active {
-  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .page-footer {
@@ -160,11 +172,9 @@ button:hover,  button:focus,
 
 /* -- HOME PAGE ---------------------------------------- */
 
-main {
-  background-color: #89a9b0;
-  border: 1px solid gray;
+.home-page  {
   height: 300px;
-  border-radius: 45%;
+  border-radius: 50%;
 }
 
 .home-page-header__item {
@@ -200,7 +210,8 @@ main {
   box-shadow: black;
 }
 .icons h3 {
-  margin:5px;
+  margin: 3px;
+  padding-left: 10px;
 }
 
 .icons a {
@@ -209,16 +220,18 @@ main {
 
 /* -- ABOUT PAGE -------------------------------------------- */
 
-.about {
+.about-page {
+  background-color: #fff;
+  border: 0;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
-.about ul {
+.about-page ul {
   list-style: none;
   padding: 0;
 }
-.about li {
+.about-page li {
   text-align: center;
 }
 .skills {
@@ -314,6 +327,11 @@ main {
 }
 
 /* -- WORK PAGE -------------------------------------------- */
+
+.work-page {
+  border-radius: 50px;
+}
+
 .work-title {
   font-size: 35px;
   font-weight: 300;
@@ -358,26 +376,21 @@ h1 {
 /* --- CONTACT PAGE ------------------------------------------------ */
 .contact-page h1 {
   text-align: center;
+  padding-top: 10px;
 }
+
 .contact-page {
-  width: 500px;
-  margin: auto;
-  display: block;
-  /* border: 1px solid black; */
+  width: 60%;
+  margin: 10px auto;
+  /* display: block; */
+  border-radius: 50%;
 }
+
 .contact-info {
   text-align: center;
   /* border: 1px solid black; */
 }
-.contact-page__form {
-  text-align: center;
-  padding-top: 10px;
-  /* border: 1px solid black; */
-}
-.contact-form__item {
-  text-align: center;
-   /* border: 1px solid black; */
-}
+
 
 /* -- Responsive CSS Rules ------------------------------------- */
 @media all and (max-width:750px) {
