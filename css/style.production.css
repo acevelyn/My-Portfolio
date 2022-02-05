@@ -15,7 +15,7 @@
 
 body {
   color: #2b2b2b;
-  background-color: #F5F5F5;
+  background-color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -115,13 +115,27 @@ button:hover,  button:focus,
 .navigation-list { /* targeting the ul tag (ul {}) */
   list-style-type: none; /* removing the bulletins in the ul list */
 }
+
 .navigation-list li { /* targeting the li in the ul list (nav li {}) */
   display: inline-block; /* moving the li links side by side (in a row) */
-  margin-left: 15px; /* moving each li to the left in 15px to create
+  margin-left: 20px; /* moving each li to the left in 15px to create
   space between them */
 }
+.navigation-list li a {
+  color: #000;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.navigation-list li a:hover {
+  color: #fff;
+  background-color: black;
+  font-size: 14px;
+  padding: 3px;
+  border-radius: 10px;
+}
 .navigation-list__item--active {
-  text-decoration: none; /* the active link will not be underlined */
+  font-weight: bolder;
 }
 
 .page-footer {
@@ -146,14 +160,33 @@ button:hover,  button:focus,
 
 /* -- HOME PAGE ---------------------------------------- */
 
+main {
+  background-color: #89a9b0;
+  border: 1px solid gray;
+  height: 300px;
+  border-radius: 45%;
+}
+
+.home-page-header__item {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.profile-container {
+  margin-top: 0px;
+}
+
 .profile {
-  max-width: 700px; /* will keep the profile box from exceedng 700px */
+  max-width: 520px; /* will keep the profile box from exceedng 700px */
   margin: 0 auto; /* will center the profile box */
-  padding-top: 25px;
+  padding-top: 20px;
+  border-radius: 85%;
+  /* background-color: darkgray; */
 }
 .profile h1 {
   text-align: left;
   margin-bottom: 0;
+  font-size: 25px;
 }
 .profile h2 {
   margin-top: 0;
@@ -162,8 +195,12 @@ button:hover,  button:focus,
   float: left; /* moved the image to float left near the text instead of on top */
   width: 230px; /* adjusted the size of the image */
   height: 300px;
-  margin-right: 40px; /* created space between welcome text and img */
+  margin-right: 15px; /* created space between welcome text and img */
   border-radius: 50%; /* created a round image */
+  box-shadow: black;
+}
+.icons h3 {
+  margin:5px;
 }
 
 .icons a {

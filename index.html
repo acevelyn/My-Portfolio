@@ -11,32 +11,33 @@
 </head>
 <body>
   <!-- LOGO & NAVIGATION-->
-  <header class="page-header"> <!-- the parent container -->
-    <a href="index.html"><img src="Img/evelyn-acevedo-logo.svg" alt="Personal logo of Evelyn Acevedo, a text logo of my name" class="page-header__item"></a> <!-- the flexbox child item -->
-    <nav class="main-navigation page-header__item"> <!-- another flexbox child item -->
+  <header class="home-page-header"> <!-- the parent container -->
+    <a href="index.html"><img src="Img/mynamelogo.png" alt="Personal logo of Evelyn Acevedo, a text logo of my name" class="home-page-header__item" width="80%"></a> <!-- the flexbox child item -->
+    <nav class="main-navigation home-page-header__item"> <!-- another flexbox child item -->
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+          <a href="index.html" role="menuitem" class="home-navigation-list__item navigation-list__item--active">HOME</a>
         </li >
         <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+          <a href="about.html" role="menuitem" class="home-navigation-list__item">ABOUT</a>
         </li>
         <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+          <a href="work.html" role="menuitem" class="home-navigation-list__item">WORK</a>
         </li>
         <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          <a href="contact.html" role="menuitem" class="home-navigation-list__item">CONTACT</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <!--MAIN-->
-  <main>
+<main>
+  <div class="profile-container"></div>
     <div class="profile">
       <img src="Img/myimage.JPG" class="profile__portrait" alt="Evelyn Acevedo Portrait">
       <h1 class="greeting">Hey there!</h1>
-      <h2>My name is Evelyn Acevedo.<br>I am a <span>Web</span> Developer & this is my Portfolio!</h2>
+      <h3>My name is Evelyn Acevedo.<br>I am a <span>Web</span> Developer & this is my Portfolio!</h3>
       <a href="https://github.com/acevelyn/">Check out some of my code</a>
     </div>
     <div class="icons">
@@ -49,7 +50,8 @@
     <a href="https://www.linkedin.com/in/evelyn-acevedo-176b13212/"><img src="Img/linkedin_icon.svg" alt="LinkedIn">
     </a></div>
     </div>
-  </main>
+  </div>
+</main>
 
 </body>
 </html>
