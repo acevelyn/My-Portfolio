@@ -24,7 +24,7 @@ body {
 }
 
 main {
-  background-color: #89a9b0;
+  background-color:#92b7bf;
   border: 1px solid gray;
   margin-top: 20px;
 }
@@ -213,8 +213,15 @@ button:hover,  button:focus,
   border-radius: 50%; /* created a round image */
   box-shadow: black;
 }
+
+.button {
+  background-color: #dce0e0;
+  color: #000;
+  margin-top: 0;
+  width: 10%;
+}
 .icons h3 {
-  margin: 3px;
+  margin: 12px 3px 0;
   padding-left: 10px;
 }
 
@@ -254,6 +261,7 @@ button:hover,  button:focus,
 /* -- WORK PAGE -------------------------------------------- */
 
 .work-page {
+  background-color: #fff;
   border-radius: 50px;
   padding: 15px;
 }
@@ -317,6 +325,10 @@ h1 {
   /* border: 1px solid black; */
 }
 
+label {
+  font-size: 17px;
+  font-weight: bolder;
+}
 
 /* -- Responsive CSS Rules ------------------------------------- */
 @media all and (max-width:750px) {
