@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,14 +10,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
+
 <body>
-  <header class="page-header"> <!-- the parent container -->
-    <a href="index.html"><img src="Img/mynamelogo.png" alt="Personal logo of Evelyn Acevedo, a text logo of my name" class="page-header__item"></a> <!-- the flexbox child item -->
-    <nav class="main-navigation page-header__item"> <!-- another flexbox child item -->
+  <header class="page-header">
+    <!-- the parent container -->
+    <a href="index.html"><img src="Img/mynamelogo.png" alt="Personal logo of Evelyn Acevedo, a text logo of my name"
+        class="page-header__item"></a> <!-- the flexbox child item -->
+    <nav class="main-navigation page-header__item">
+      <!-- another flexbox child item -->
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
           <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li >
+        </li>
         <li role="presentation">
           <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
         </li>
@@ -40,125 +45,173 @@
         <!-- PORTFOLIO SITE GRID -->
         <div class="grid__item grid-item-1">
           <h1>My Portfolio Site</h1>
-          <p>
+
+          <!-- Portfolio Site Buttons -->
+          <div class="project-buttons">
             <a href="https://github.com/acevelyn/My-Portfolio" target="_blank">
               <img src="Img/portfolio-site.png" width="100%" alt="Portfolio Site Screenshot">
-          </a>
-          </p>
-          <p>
-            <a href="https://github.com/acevelyn/chat-app" target="_blank">See project on Github</a>
-          </p>
-          <p>
-            My portfolio website that shares information about myself as well as showcase projects I have done.
-          </p>
-          <div class="tech-stack">
-            <h3>TechStack</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
+              <button class="button-link">Official Link</button></a>
+            <button class="project-details" href="#project1">Project Details</button>
           </div>
+
+          <!-- PORTFOLIO SITE MODAL -->
+          <div class="modal" id="project1">
+            <div class="modal-content">
+              <span class="close-project">&times;</span>
+              <h1>Portfolio Site Details</h1>
+              <h2>Project Description</h2>
+              <p>
+                <a href="https://github.com/acevelyn/chat-app" target="_blank">See project on Github</a>
+              </p>
+              <p>
+                My portfolio website that shares information about myself as well as showcase projects I have done.
+              </p>
+              <div class="tech-stack">
+                <h3>TechStack</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
         <!-- POKEDEX APP GRID -->
         <div class="grid__item grid-item-2">
           <h1>Pokedex Javascript App</h1>
-          <p>
+
+          <!-- Pokedex App Buttons -->
+          <div class="project-buttons">
             <a href="https://acevelyn.github.io/simple-js-app/" target="_blank">
               <img src="Img/PokedexApp.png" width="100%" alt="Pokedex App Screenshot">
-              Pokedex App
-          </a>
-          </p>
-          <p>
-          <a href="https://github.com/acevelyn/simple-js-app" target="_blank">See project on Github </a>
-          </p>
-          <p>
-            A simple Javascript app that displays each Pokemon's description. The description data was pulled from an external API
-          </p>
-          <div class="tech-stack">
-            <h3>TechStack</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>Bootstrap</li>
-            </ul>
+              <button class="button-link">Official Link</button></a>
+
+            <button class="project-details" href="#project2">Project Details</button>
+          </div>
+
+          <!-- POKEDEX APP MODAL -->
+          <div class="modal" id="project2">
+            <div class="modal-content">
+              <span class="close-project">&times;</span>
+              <h1>Pokedex App Details</h1>
+              <h2>Project Description</h2>
+              <p>
+                <a href="https://github.com/acevelyn/simple-js-app" target="_blank">See project on Github </a>
+              </p>
+              <p>
+                A simple Javascript app that displays each Pokemon's description. The description data was pulled from
+                an external API
+              </p>
+              <div class="tech-stack">
+                <h3>TechStack</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- ANGULAR FLIX APP GRID -->
         <div class="grid__item  grid-item-3">
           <h1>Angular Flix App</h1>
-          <p>
-            <a href="https://acevelyn.github.io/myFlix-Angular-client/welcome">
-              <img src="Img/angularflix.png" width="100%" alt="Flix-App Screenshot">
-              <p>Angular Flix App</p>
-          </a>
-          <p>
-            <a href="https://github.com/acevelyn/myFlix-Angular-client" 
-            target="_blank">
-              See project on Github
-            </a>
-            </p>
-            <p>
-              An Angular Flix-client application is the client side of the "movieAPI" application . It will be the visual interface that allows users to interact with the application's database to search for movies and movie details such as genres and directors. It will also give users the ability to create, edit their account and manage a favorite movie list. 
-            </p>
-            <!-- <div class="tools">
-              <h2>Tools Used</h2>
 
+          <!-- Angular Flix App Buttons -->
+          <div class="project-buttons">
+            <a href="https://acevelyn.github.io/myFlix-Angular-client/welcome" target="_blank">
+              <img src="Img/angularflix.png" width="100%" alt="Flix-App Screenshot">
+              <button class="button-link">Official Link</button></a>
+
+            <button class="project-details" href="#project3">Project Details</button>
+          </div>
+
+          <!-- ANGULAR FLIX APP MODAL -->
+          <div class="modal" id="project3">
+            <div class="modal-content">
+              <span class="close-project">&times;</span>
+              <h1>Angular Flix App Details</h1>
+              <h2>Project Description</h2>
               <p>
-                <a href=”https://trello.com/b/UeovbGd2/flixapp-board” 
-              target="_blank">
-                Trello Board
-              </a><br>
-              I use this board to keep track of my building process to see what still is in progress or what has been completed.
+                <a href="https://github.com/acevelyn/myFlix-Angular-client" target="_blank">
+                  See project on Github
+                </a>
+              </p>
+              <p>
+                An Angular Flix-client application is the client side of the "movieAPI" application . It will be the
+                visual interface that allows users to interact with the application's database to search for movies and
+                movie details such as genres and directors. It will also give users the ability to create, edit their
+                account and manage a favorite movie list.
               </p>
 
-              <h3>User Flow Charts</h3>
-              <a href=
-              "https://coach-courses-us.s3.amazonaws.com/exercises/1127/43249/890c9944eda5330d5dc96ff17340f1e7/6.1-Charts.pdf" target="_blank">
-              <img src="Img/flowchart1.png" alt="userflowchart 1" width="100%">
-                User Flow Chart 1
-              </a>
-              <a href=
-              "https://coach-courses-us.s3.amazonaws.com/exercises/1127/43249/17b9b27a1d6471647da87a5f4add6b9f/6.1-Charts--1-.pdf" target="_blank">
-              <img src="Img/flowchart2.png" alt="userflowchart 2" width="100%">
-                User Flow Chart 2
-              </a>
-              <a href=
-              "https://coach-courses-us.s3.amazonaws.com/exercises/1127/43249/f43f1381876438dfb2a359b576ab398c/6.1-Charts--2-.pdf" target="_blank">
-              <img src="Img/flowchart3.png" alt="userflowchart 3" width="100%">
-                User Flow Chart 3
-              </a>
-            </div> -->
-            <div class="tech-stack">
-              <h3>Tech Stack</h3>
-              <ul>
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>MongoDB</li>
-                <li>Javascript</li>
-                <li>Typescript</li>
-                <li>Angular</li>
-              </ul>
+              <div class="tools">
+                <h2>Tools Used</h2>
+                <p>
+                  <a href=”https://trello.com/b/UeovbGd2/flixapp-board” target="_blank">
+                    Trello Board
+                  </a><br>
+                  I use this board to keep track of my building process to see what still is in progress or what has
+                  been completed.
+                </p>
+
+                <h3>User Flow Charts</h3>
+                <a href="https://coach-courses-us.s3.amazonaws.com/exercises/1127/43249/890c9944eda5330d5dc96ff17340f1e7/6.1-Charts.pdf"
+                  target="_blank">
+                  <img src="Img/flowchart1.png" alt="userflowchart 1" width="100%">
+                  User Flow Chart 1
+                </a>
+                <a href="https://coach-courses-us.s3.amazonaws.com/exercises/1127/43249/17b9b27a1d6471647da87a5f4add6b9f/6.1-Charts--1-.pdf"
+                  target="_blank">
+                  <img src="Img/flowchart2.png" alt="userflowchart 2" width="100%">
+                  User Flow Chart 2
+                </a>
+                <a href="https://coach-courses-us.s3.amazonaws.com/exercises/1127/43249/f43f1381876438dfb2a359b576ab398c/6.1-Charts--2-.pdf"
+                  target="_blank">
+                  <img src="Img/flowchart3.png" alt="userflowchart 3" width="100%">
+                  User Flow Chart 3
+                </a>
+              </div>
+              <div class="tech-stack">
+                <h3>Tech Stack</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>MongoDB</li>
+                  <li>Javascript</li>
+                  <li>Typescript</li>
+                  <li>Angular</li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
+
+
+      </div>
     </section>
   </main>
 
   <!--FOOTER-->
   <footer class="page-footer">
     <p>Find me on</p>
-    <div class="social-media"> <!-- making the icons it's own single element/div to target it in CSS using Flexbox easier -->
-    <a href="https://github.com/acevelyn" target="_blank"><img src="Img/github_icon.svg" alt="Github">
-    </a>
-    <a href="https://twitter.com/evelynacev" target="_blank"><img src="Img/twitter_icon.svg" alt="Twitter">
-    </a>
-    <a href="https://www.linkedin.com/in/evelyn-acevedo-176b13212/" target="_blank"><img src="Img/linkedin_icon.svg" alt="LinkedIn">
-    </a></div>
+    <div class="social-media">
+      <!-- making the icons it's own single element/div to target it in CSS using Flexbox easier -->
+      <a href="https://github.com/acevelyn" target="_blank"><img src="Img/github_icon.svg" alt="Github">
+      </a>
+      <a href="https://twitter.com/evelynacev" target="_blank"><img src="Img/twitter_icon.svg" alt="Twitter">
+      </a>
+      <a href="https://www.linkedin.com/in/evelyn-acevedo-176b13212/" target="_blank"><img src="Img/linkedin_icon.svg"
+          alt="LinkedIn">
+      </a>
+    </div>
   </footer>
-  <script src="scripts.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -292,7 +292,7 @@ h1 {
   }
 
   .grid__item {
-    background-color: lightgray;
+    /* background-color: lightgray; */
     width: auto;
     min-height: auto;
     margin: 0;
@@ -306,6 +306,47 @@ h1 {
     -ms-grid-row-span: 2;
     grid-row: 1 / 3;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: rgb(175, 216, 216);
+  margin: 20% auto;
+  width: 80%;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.project-buttons {
+  text-align: center;
+}
+
+.project-buttons button {
+background-color: black;
+padding: 8px;
+margin-top: 10px;
+}
+
+.close-project {
+  color: red;
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+}
+
+.close-project:hover,
+.close-project:focus {
+  cursor: pointer;
 }
 
 /* --- CONTACT PAGE ------------------------------------------------ */
