@@ -279,7 +279,8 @@ h1 {
 .grid__item {
   display: inline-block;
   /* keeping the grid items within the page flow but can add weight, padding, etc*/
-  width: 33%
+  width: 35%;
+  /* box-shadow: 10px 10px black; */
 }
 @supports (display: grid) {
   .grid {
@@ -308,6 +309,16 @@ h1 {
   }
 }
 
+.project-buttons {
+  text-align: center;
+}
+
+.project-buttons button {
+background-color: rgb(39, 38, 38);
+padding: 8px;
+margin-top: 10px;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -318,32 +329,31 @@ h1 {
   width: 100%;
   height: 100%;
 }
-
 .modal-content {
-  background-color: rgb(175, 216, 216);
+  /* background-color: #92b7bf;; */
+  background-color: rgb(39, 38, 38);
+  color: #fff;
+  box-shadow: 20px 20px 30px 15px gray;
   margin: 20% auto;
   width: 80%;
   padding: 30px;
-  border: 1px solid black;
+  border: 1px solid;
+}
+.modal h1 {
+  font-size: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.modal a {
+  color: rgb(214, 208, 208);
 }
 
-.project-buttons {
-  text-align: center;
-}
-
-.project-buttons button {
-background-color: black;
-padding: 8px;
-margin-top: 10px;
-}
 
 .close-project {
   color: red;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   float: right;
 }
-
 .close-project:hover,
 .close-project:focus {
   cursor: pointer;
